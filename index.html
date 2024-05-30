@@ -8,10 +8,29 @@
 </head>
 <body>
     <div class="container">
-        <h1>Affirmation Generator</h1>
-
+        <h1><strong>Affirmify - Your Affirmation Generator</strong></h1>
+        <form>
+            <select id="feelingCategory">
+                <option value="" disabled selected>Select your current feeling</option>
+                <option value="happy">Happy</option>
+                <option value="motivated">Motivated</option>
+                <option value="stressed">Stressed</option>
+                <option value="anxious">Anxious</option>
+                <option value="depressed">Depressed</option>
+                
+            </select>
+            <br>
+       <input type="text"
+       placeholder="Describe your current thoughts or feelings..."
+       />
+      <input type="Submit">
+        </form>
+       
         <button onclick="generateAffirmation()">Generate Affirmation</button>
-        <div id="affirmation"></div>
+        <div id="affirmation">
+            Take a deep breath, and remember that you are capable and resilient.
+        </div>
+        
     </div>
     <footer>
         <em>
