@@ -1,0 +1,103 @@
+body{background-color: rgb(230, 230, 250);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+background: linear-gradient(109.6deg, rgb(209, 158, 246) 11.2%, rgb(93, 219, 241) 91.1%);
+width: 600px;
+margin: 40px auto;
+padding: 30px;
+border-radius: 10px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+
+select {
+display: block;
+border: none;
+border-radius: 20px;
+width: 60%;
+margin: 10px auto;
+padding: 15px 20px;
+font-size: 18px;
+margin-bottom: 10px;
+opacity: 0.6;
+font: 1em sans-serif;
+color: rgba(26, 9, 156, 0.692);
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+
+form {
+padding: 30px;
+display: flex;
+border-radius: 20px;
+margin-bottom: 20px;
+color: aliceblue;
+}
+
+.feelings 
+{
+padding: 16px 20px;
+font-size: 18px;
+border-radius: 20px;
+line-height: 30px;
+width: 80%;
+opacity: 0.8;
+font: 1em sans-serif;
+color: rgba(26, 9, 156, 0.692);
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+margin: 10px auto;
+background-color: rgb(247, 242, 255);
+}
+
+.affirmation {
+margin-top: 20px;
+margin-bottom: 20px;
+font-size: 18px;
+color: #333;
+line-height: 2;
+border-left: 3px solid rgba(26, 9, 156, 0.692) ;
+}
+
+.submit-button {
+    color: rgb(93, 219, 241);
+background-color:rgba(26, 9, 156, 0.692);
+    font-size: 18px;
+    line-height: 30px; 
+    border: none;
+    width: 100px;
+    border-radius: 20px;
+    padding: 16px 20px;
+   
+    margin: 10px auto;
+
+
+}
+
+button {
+display: block;
+margin: 20px auto;
+padding: 10px 20px;
+font-size: 16px;
+color: rgb(93, 219, 241);
+background-color:rgba(26, 9, 156, 0.692);
+border: none;
+border-radius: 10px;
+cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button:hover {
+background-color: #0056b3;
+}
+footer {
+border-top: 1px solid rgb(239, 153, 237);
+padding: 30px 0 0 0;
+text-align: center;
+font-size: 18px;
+color: rgba(26, 9, 156, 0.692);
+opacity: 0.8;
+} 
