@@ -1,55 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Affirmation Generator</title>
-    <link rel="stylesheet" href="src/style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
+<body>
     <div class="container">
-      <h1><strong>Affirmify - Your Affirmation Generator</strong></h1>
-      
+        <h1><strong>Affirmify - Your Affirmation Generator</strong></h1>
+        
         <select id="feelingCategory">
-          <option value="" disabled selected>
-            Select your current feeling
-          </option>
-          <option value="happy">Happy</option>
-          <option value="motivated">Motivated</option>
-          <option value="stressed">Stressed</option>
-          <option value="anxious">Anxious</option>
-          <option value="depressed">Depressed</option>
+            <option value="" disabled selected>
+                Select your current feeling
+            </option>
+            <option value="happy">Happy</option>
+            <option value="motivated">Motivated</option>
+            <option value="stressed">Stressed</option>
+            <option value="anxious">Anxious</option>
+            <option value="depressed">Depressed</option>
         </select>
         
-        <form>
         <input
-          type="text"
-          placeholder="Describe your current thoughts or feelings..."
-          class="feelings"
+            type="text"
+            placeholder="Describe your current thoughts or feelings..."
+            class="feelings"
         />
-        <input type="submit" class = "submit-button"/>
-      </form>
-      
-      <div class="affirmation">
-        Take a deep breath, and remember that you are capable and resilient.
-      </div>
+        
+        <div class="affirmation" id="affirmation">
+        
+        </div>
 
-      <button onclick="generateAffirmation()">Generate Affirmation</button>
+        <button class="generate-button">Generate Affirmation</button> 
     </div>
     <footer>
-      <em>
-        This AI affirmation application was created by
-        <a href="https://github.com/Nattie14" target="_blank">Nattie M 🇿🇼</a>
-        and is
-        <a href="https://github.com/Nattie14/Affirmify" target="_blank"
-          >open sourced on Github</a
-        >
-        and
-        <a href="https://affirmify.netlify.app/" target="_blank"
-          >hosted on Netlify</a
-        >
-      </em>
+        <em>
+            This AI affirmation application was created by
+            <a href="https://github.com/Nattie14" target="_blank">Nattie M 🇿🇼</a>
+            and is
+            <a href="https://github.com/Nattie14/Affirmify" target="_blank">open sourced on Github</a>
+            and
+            <a href="https://affirmify.netlify.app/" target="_blank">hosted on Netlify</a>
+        </em>
     </footer>
     <script src="src/script.js"></script>
-  </body>
+</body>
 </html>
