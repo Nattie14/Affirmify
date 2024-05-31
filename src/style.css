@@ -19,18 +19,21 @@ body {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     text-align: center;
 }
-.input-wrapper
-{
+
+.input-wrapper {
     margin-bottom: 30px;
     border-radius: 10px;
     padding: 30px;
-    background-color: rgb(247, 242, 255);
+   background-color: rgb(230, 230, 250);
+   box-shadow: rgba(26, 9, 156, 0.692) 0px 5px 10px;
 }
-.hint{
+
+.hint {
     line-height: 1.5;
     font-style: oblique;
     opacity: 0.7;
 }
+
 h1 {
     text-align: center;
 }
@@ -62,7 +65,7 @@ input.feelings {
     border-left: 3px solid rgba(26, 9, 156, 0.692);
     box-shadow: rgba(26, 9, 156, 0.692) 0px 5px 10px;
     padding-left: 10px;
-    background-color: rgb(247, 242, 255);
+     background-color: rgb(230, 230, 250);
     border-radius: 10px;
 }
 
@@ -83,7 +86,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-
 footer {
     width: 100%;
     text-align: center;
@@ -94,3 +96,18 @@ footer {
     margin-top: 30px;
 }
 
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
