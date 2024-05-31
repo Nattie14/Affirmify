@@ -16,6 +16,10 @@ function generateAffirmation(event) {
     let context = 
     "Context: You are a positive affirmation expert and can generate affirmations that relate to the user's feelings and thought. Your mission is to write a 4 line positive affirmation in basic HTML and br/> each sentence.  Sign at the bottom ‘<strong> Love Nattie💜 </strong> ‘.  Do not include a title and make sure to follow the user's feelings when responding with a positive affirmation to make them feel better. Please respond in British english language. ";
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+    let affirmationElement = document.querySelector ("#affirmation");
+    affirmationElement.innerHTML = `⏳ <small> <em> Generating your positive affirmation</em> <small/>`;
+
     
     console.log("Generating affirmation");
     console.log(`Prompt: ${prompt}`);
